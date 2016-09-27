@@ -1,0 +1,6 @@
+def main():
+    sol = Solution()
+    print sol.method(args)
+
+if __name__ == '__main__':
+    main()
