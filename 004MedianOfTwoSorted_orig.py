@@ -20,8 +20,6 @@ class Solution(object):
         else:
             return self.findFirstIdx(pivot, nums2[0:i], i)
     def resolveTrivial(self, nums1, nums2, k, m, n):
-        print ("resolving trivial")
-        print (nums1, nums2, k, m, n)
         nums = nums1 + nums2
         s = sorted(nums)
         # check if total count is odd
@@ -30,8 +28,6 @@ class Solution(object):
         return float(s[k-1] + s[k])/2
     def findKthEleInTwoArrays(self, nums1, nums2, k, m, n):
         # make sure m >= n
-        print ("finding ", k, "th element")
-        print (nums1, nums2, k, m, n)
         if n > m:
             return self.findKthEleInTwoArrays(nums2, nums1, k, n, m)
         if m < 3:
@@ -47,7 +43,6 @@ class Solution(object):
         
         # part 3:
         # now there are (idx1 + idx2) numbers <= pivot
-        print ("idx1", idx1, "idx2", idx2)
         if (idx1 + idx2) == (k-1):
             if self.odd:
                 return pivot
@@ -79,7 +74,7 @@ class Solution(object):
 
 def main():
     sol = Solution()
-    print sol.findMedianSortedArrays([1], [1,1,1])
+    print sol.findMedianSortedArrays([1], [1,1,1]) ＃ 1.0
 
 if __name__ == '__main__':
     main()
