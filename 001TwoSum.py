@@ -1,7 +1,4 @@
 # 001 TwoSum
-import os
-import sys
-
 class Solution(object):
     def twoSum(self, nums, target):
         """
@@ -25,4 +22,4 @@ def main():
     sol = Solution()
     print sol.twoSum([-1,-1,0,1,2,4],0 )
 if __name__ == '__main__':
-    sys.exit(main())
+    main()

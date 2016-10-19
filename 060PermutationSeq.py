@@ -1,3 +1,4 @@
+# 60 Permutation Sequence
 class Solution(object):
     def getPermutation(self, n, k):
         """
@@ -31,8 +32,8 @@ class Solution(object):
 def main():
     sol = Solution()
     print sol.getPermutation(1,1) # "1"
-    #print sol.getPermutation(3,5) # "312"
-    #print sol.getPermutation(3,4) # "231"
+    print sol.getPermutation(3,5) # "312"
+    print sol.getPermutation(3,4) # "231"
     print sol.getPermutation(4,13) # "3124"
 
 if __name__ == '__main__':
