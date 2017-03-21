@@ -21,5 +21,6 @@ def main():
     print sol.poorPigs(1000, 15, 60) # 5
     print sol.poorPigs(1000, 12, 60) # 4
     print sol.poorPigs(100, 10, 10) # 7
+    print sol.poorPigs(500, 24, 48)
 if __name__ == '__main__':
     main()
